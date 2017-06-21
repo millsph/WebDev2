@@ -1,0 +1,16 @@
+
+1. --- Assuming the local respository is called "Further"
+
+git init
+git add *
+git commit -m "first commit"
+git remote add origin https://github.com/millsph/Further.git
+git push -u origin master
+
+2. to upload files to existing respository ....
+
+git add *
+git commit -m "new commit"
+git push -u origin master
+
+Check the site to identify the changes have been registered. 

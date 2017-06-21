@@ -1,0 +1,39 @@
+
+--- Assuming the local respository is default one : millsph.github.io
+1. The following steps is  setup account on github ----------
+Go to directory in PC to store the website code
+cd C:\Users\lan\Documents\GitHub\millsph.github.io
+from Startup run "Git shell" :
+> git init 
+Copy all the source code into the Github directory above using normal copy and paste. At the GitHub folder run the following command:
+> git add *
+> git commit -m "first commit"
+Only Run this remove command  at the 1st time – for initialise the new project: 
+> git remote add origin https://github.com/millsph/millsph.github.io
+> git commit -m "first commit"
+That will setup the account to GitHub sit. 
+And git push doing the copy the webpages to the designated website : 
+> git push -u origin master. 
+Push command flush the buffer to complete the process. 
+
+The push line will be used again to upload files.
+
+2. to upload files to existing project ....
+Copy the code to the C:\Users\lan\Documents\GitHub\millsph.github.io or to appropriate repository folder
+Go to directory to have the website code
+cd C:\Users\lan\Documents\GitHub\millsph.github.io
+from Startup run "Git shell" :
+> git add *
+> git commit -m "second commit"
+> git push -u origin master. 
+
+Push command flush the buffer to complete the process. 
+
+Files can be verified on the github site with the commit tag displays on the site (eg: second commit)
+
+Check the site to identify the changes have been registered (for example : https://millsph.github.io/index.html)
+
+
+
+
+

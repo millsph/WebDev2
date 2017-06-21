@@ -1,0 +1,457 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
+/* Typography */
+h1,h2,h3 {
+    text-align: left;
+    font-family: Calibri, Futura, Helvetica, Arial,Sans-serif;
+}
+
+.header h1{
+    text-align: left;
+    font-family: Calibri, Book Antiqua, Tahoma, Verdana;
+    /*margin-bottom:40px; */
+}  
+
+
+.container-fluid {
+    padding: 0em;
+    position: relative;
+}
+
+.projectName {
+    text-transform: uppercase;
+}
+
+.projectName a{
+    color: white;
+}
+
+.carousel-caption {
+    top: 40%;  
+    transform: translate(-50%, -50%);
+    display: block;
+    left: 50%;
+    width: 80%;
+    filter: drop-shadow(10px 10px 2px #000);      
+}
+
+.nav {
+    /* display: inline-block;*/
+    /*position: fixed;*/
+    width: auto; 
+    top: 0;
+ 
+    /* padding: 20px;*/
+}
+
+ .nav ul {
+    /*list-style-type: none;*/
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    color: white;
+    text-transform: uppercase;
+}
+
+.nav li { float:down; width:auto; }
+
+.nav li a {
+    display: inline-block;
+    color: white;
+    text-align: centre;
+    padding: 1.2em 1.2em;
+    text-decoration: none;
+    transition: color 1000ms;
+    -webkit-transition: color 1000ms;
+}
+
+.navbar-inverse .navbar-nav > .active  > a:hover { color: #f50; }
+.navbar-inverse .navbar-nav > li > a:hover { color: #f50; }
+.navbar-nav a:hover {
+    color: #f50;  
+    text-decoration: none;
+}  
+
+.container {
+    padding: 0em;
+    position: relative;
+}
+
+.anchor {
+    padding-top: 7.75em; 
+}
+
+/*///////////  Work /////  */
+.work {
+    /*background-color: #f0ffff; */
+    background-image: url("../img/little.jpg");  
+    background-attachment: fixed;
+   -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;    
+    background-size:cover;    
+
+}
+
+.work h1 {
+    font-family: 'Audiowide', cursive, sans-serif;
+    color:white;
+    text-shadow: 0 2px 0 black, 0 0 10px black;
+    text-align: center;
+    filter: drop-shadow(10px 10px 2px #000);  
+    margin-top: 57px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.work  h2{
+    text-align: center; 
+}
+
+.work  img {
+    padding: 5px;
+    margin: 5px;
+    width: auto;
+    height: auto; 
+    filter: drop-shadow(10px 10px 2px #000);   
+}
+
+
+/*///////////// Contact_page ///*/
+#contact {
+    width: 100%;
+    margin-top:0;
+    /*margin-bottom: 15px;*/
+    font-family: Calibri, Book Antiqua, Tahoma, Verdana;
+    font-size: 1.125em;
+    text-align: left;
+    background-image: url("../img/little-2.jpg");  
+    background-attachment: fixed;
+   -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;    
+    background-size:cover;
+}
+
+
+#contact  .column{
+    width: 70%;
+    height: auto;
+
+    padding: 0.625em 1.25em 0.625em 1.875em ;  
+}
+
+
+#contact .myContact {
+   font-family: Calibri;
+    font-size: 1.125em;   
+    font-weight: 400;
+    margin-left: 2em;
+    background-color: #f9c5bc; 
+    color: #654321;  
+}
+
+
+#contact span:hover {
+        color: blue;  
+}
+
+.form-group {
+    font-family: Calibri;
+    font-size: 1.125em;   /* 18px  */
+    font-weight: 400;   
+
+    width: 80%;
+    height: auto;  
+}
+
+
+.submit-button button:hover {
+    /* margin: 30px 0px;  
+    margin-bottom: 30px; */
+    color: #f50; 
+}
+
+/*.form-control {
+    width: 70%;
+}*/
+
+
+/* //////////// FAQ.html /////// */
+#faq {
+    width: 100%;
+    margin: 0 auto;
+    font-family: Calibri, Book Antiqua, Tahoma, Verdana;
+    font-size: 1.125em;
+    text-align: left;  
+    background-image: url("../img/beach-sand-rock.jpg"); /* no-repeat center center fixed; */
+    background-attachment: fixed;    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;    
+    background-size:cover;
+}
+
+#faq .panel-default {
+    width: 70%;
+    height: auto;
+    display: inline-block; 
+    float: bottom;
+    padding: 0.625em 1.25em 0.625em 1.25em ;
+    margin-left: 2em;
+}
+
+#faq .panel-heading {
+    background-color: #f9c5bc;
+    color: #654321;
+}
+
+#faq .panel-title {
+    font-family: Calibri;
+    font-size: 1.125em;   /* 18px  */
+    font-weight: 400;
+}
+
+#faq .panel-body {
+    font-family: Calibri;
+    font-size: 1em;   /* 16px  */
+    font-weight: 400;
+}
+
+
+/*  ///////////  Learn more   ////*/
+
+.learnMore {
+    text-align: left;
+    float: left;  
+
+    background-image: url("../img/little-2.jpg");  
+    background-attachment: fixed;
+   -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;    
+    background-size:cover;    
+
+}
+
+.modal-button{
+    float:right;
+    margin-top: 20px;
+    margin-right: 30px; 
+    padding: 10px ;  
+}
+
+#modalembed {
+    height: 500px;
+    width: 100%;
+    padding: 10px;
+}
+
+
+/*/////  jQuery modal  ///////*/
+
+/* The Modal (background screen) */
+.j-modal {
+    display: none;   /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1;      /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;     /* Full width */
+    height: 100%;    /* Full height */
+    overflow: auto;  /* Enable scroll if needed */
+    /*background-color: rgb(0,0,0);      /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.j-modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+}
+
+/* The Close Button */
+.j-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.j-close:hover,
+.j-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+} 
+
+/* //////////// About.html /////// */
+#about { 
+    width: 100%;
+    margin: 0 auto;
+    font-family: Calibri, Book Antiqua, Tahoma, Verdana;
+    font-size: 1.125em;
+    text-align: left;
+    background: url("../img/waves.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;    
+    background-size:cover;
+}
+
+#about-c1{
+    /*padding: 10px 20px; */
+    padding: 0.625em 1.25em 0.625em 1.875em ;
+    margin-left: 1em;
+}
+
+#about-c2{
+    padding: 0.625em 1.25em 0.625em 1.875em ;
+    margin-left: 1em;
+}
+#about-c3 {
+    padding: 0.625em 1.25em 0.625em 1.875em ;
+    margin-left: 1em;
+    font-size: 13px;
+    color:brown;
+    background-color: #5AD4C2;
+}
+
+#skill-list {
+    padding: 0.625em 1.25em 0.625em 1.875em ;
+    margin-left: 1em;
+    /*background-color: #5AD4C2; */
+    color: #FFF;
+    text-transform: none;   
+}
+
+.about-text {
+    width: 80%;
+    height: auto;
+    display: inline-block; 
+    float: bottom;
+    font-family: Calibri, Book Antiqua, Tahoma, Verdana;
+    font-size: 1em;   /* 16px  */ 
+    font-weight: 400;
+    padding: 0.625em 1.25em 0.625em 1.875em ;
+    margin-left: 1em;
+}
+
+/*///////  tooltip  /////*/
+
+.ttip {
+    visibility: visible;
+    opacity: 1;
+    position: relative;
+    display: inline-block;
+    border-bottom: 1.5px dotted black;
+}
+
+
+
+/*/////  back to top button   www.menucool.com /////*/
+#backtop {
+    position: fixed;
+    left:auto; 
+    right: 20px;top:auto;bottom: 20px;
+	outline: none;
+    overflow:hidden;
+    color:#fff;
+    text-align:center;
+    background-color:rgba(49,79,96,0.84);
+    height:40px;
+    width:40px;
+    line-height:40px;
+    font-size:14px;
+    border-radius:2px;
+    cursor:pointer;
+    transition:all 0.3s linear;
+    z-index:999999;
+
+    opacity:1;
+    display:none;
+}
+
+#backtop:hover {
+    background-color:#27CFC3;
+ }
+
+ #backtop.mcOut {
+    opacity:0;
+ }
+
+.wrapper-video {
+    font-size: 0.9em;  
+    margin: auto;
+    padding: 15.625em 16.25em 15.625em 16.875em ;
+  /*  width: 400px;
+    height: 350px; */
+}
+
+.embed-responsive-item {
+    width:  50%;
+    height: 50%;
+}  
+
+footer {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+
+.footer {
+    background:  white;     
+    font-size: 0.8em;  
+  /*  height: 50px;  */
+    width: auto;
+   /* padding:5px; */ 
+    margin: auto;    
+    text-align:center;
+
+ }
+
+ .page-footer-link {
+    float: bottom ; 
+    align-content: center; 
+    width: auto;
+ }
+
+.page-footer-link a:link {
+    color: blue;
+}  
+
+.page-footer-link a:active {
+    color: red;
+}  
+
+.page-footer-link a:visited {
+    color: green;
+}  
+
+.page-footer-link a:hover img:hover {
+    color: #f50;  
+}
+
+ /*////////////////*/
+
+@media (max-width:30em) {
+    body {
+        position:relative;
+        /*background-color: red; */
+    } 
+}
