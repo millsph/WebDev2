@@ -19,9 +19,21 @@ h1,h2,h3 {
 .header h1{
     text-align: left;
     font-family: Calibri, Book Antiqua, Tahoma, Verdana;
-    /*margin-bottom:40px; */
 }  
 
+.page-default {
+    width: 100%;
+    margin:0 auto;
+    /*margin-bottom: 15px;*/
+    font-family: Calibri, Book Antiqua, Tahoma, Verdana;
+    font-size: 1.125em;
+    text-align: left;
+    background-attachment: fixed;
+   -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;    
+    background-size:cover;
+}
 
 .container-fluid {
     padding: 0em;
@@ -50,12 +62,9 @@ h1,h2,h3 {
     /*position: fixed;*/
     width: auto; 
     top: 0;
- 
-    /* padding: 20px;*/
 }
 
  .nav ul {
-    /*list-style-type: none;*/
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -64,13 +73,17 @@ h1,h2,h3 {
     text-transform: uppercase;
 }
 
-.nav li { float:down; width:auto; }
+/*/// for hamburger menu ///*/
+.nav li { 
+    float:down; 
+    width:auto; 
+}
 
 .nav li a {
     display: inline-block;
     color: white;
     text-align: centre;
-    padding: 1.2em 1.2em;
+    padding: 1.05em 1.05em;
     text-decoration: none;
     transition: color 1000ms;
     -webkit-transition: color 1000ms;
@@ -89,38 +102,29 @@ h1,h2,h3 {
 }
 
 .anchor {
-    padding-top: 7.75em; 
+    padding-top: 5.75em; 
 }
 
-/*///////////  Work /////  */
+/*/////////  Work ///////*/
 .work {
-    /*background-color: #f0ffff; */
-    background-image: url("../img/little.jpg");  
-    background-attachment: fixed;
-   -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;    
-    background-size:cover;    
-
+   background-image: url("../img/little-2.jpg");  
 }
 
 .work h1 {
+    text-align: center;    
     font-family: 'Audiowide', cursive, sans-serif;
     color:white;
     text-shadow: 0 2px 0 black, 0 0 10px black;
-    text-align: center;
     filter: drop-shadow(10px 10px 2px #000);  
-    margin-top: 57px;
-    margin-bottom: 20px;
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-top: 27px;
+    margin-bottom: 50px;
 }
 
-.work  h2{
+.work h2{
     text-align: center; 
-}
+}  
 
-.work  img {
+.work img {
     padding: 5px;
     margin: 5px;
     width: auto;
@@ -129,27 +133,15 @@ h1,h2,h3 {
 }
 
 
-/*///////////// Contact_page ///*/
+/*///////////// Contact_page /////*/
 #contact {
-    width: 100%;
-    margin-top:0;
-    /*margin-bottom: 15px;*/
-    font-family: Calibri, Book Antiqua, Tahoma, Verdana;
-    font-size: 1.125em;
-    text-align: left;
     background-image: url("../img/little-2.jpg");  
-    background-attachment: fixed;
-   -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;    
-    background-size:cover;
 }
 
 
 #contact  .column{
     width: 70%;
     height: auto;
-
     padding: 0.625em 1.25em 0.625em 1.875em ;  
 }
 
@@ -191,17 +183,7 @@ h1,h2,h3 {
 
 /* //////////// FAQ.html /////// */
 #faq {
-    width: 100%;
-    margin: 0 auto;
-    font-family: Calibri, Book Antiqua, Tahoma, Verdana;
-    font-size: 1.125em;
-    text-align: left;  
     background-image: url("../img/beach-sand-rock.jpg"); /* no-repeat center center fixed; */
-    background-attachment: fixed;    
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;    
-    background-size:cover;
 }
 
 #faq .panel-default {
@@ -234,15 +216,7 @@ h1,h2,h3 {
 /*  ///////////  Learn more   ////*/
 
 .learnMore {
-    text-align: left;
-    float: left;  
-
-    background-image: url("../img/little-2.jpg");  
-    background-attachment: fixed;
-   -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;    
-    background-size:cover;    
+    background-image: url("../img/little-2.jpg");   
 
 }
 
@@ -301,21 +275,31 @@ h1,h2,h3 {
 } 
 
 /* //////////// About.html /////// */
-#about { 
+/*///  another way to embed an background image ///
+.about { 
     width: 100%;
     margin: 0 auto;
-    font-family: Calibri, Book Antiqua, Tahoma, Verdana;
-    font-size: 1.125em;
-    text-align: left;
+
     background: url("../img/waves.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;    
     background-size:cover;
+} */
+
+.about {
+    background-image: url("../img/waves.jpg"); 
+  
+}  
+
+.about-block{
+    /*padding: 10px 20px; */
+    padding: 0.625em 1.25em 0.625em 1.875em ;
+    margin-left: 1em;
 }
 
-#about-c1{
-    /*padding: 10px 20px; */
+/*#about-c1{
+
     padding: 0.625em 1.25em 0.625em 1.875em ;
     margin-left: 1em;
 }
@@ -323,18 +307,16 @@ h1,h2,h3 {
 #about-c2{
     padding: 0.625em 1.25em 0.625em 1.875em ;
     margin-left: 1em;
-}
+} */
+
 #about-c3 {
-    padding: 0.625em 1.25em 0.625em 1.875em ;
-    margin-left: 1em;
+
     font-size: 13px;
-    color:brown;
+    color:brown; 
     background-color: #5AD4C2;
 }
 
 #skill-list {
-    padding: 0.625em 1.25em 0.625em 1.875em ;
-    margin-left: 1em;
     /*background-color: #5AD4C2; */
     color: #FFF;
     text-transform: none;   
@@ -348,8 +330,6 @@ h1,h2,h3 {
     font-family: Calibri, Book Antiqua, Tahoma, Verdana;
     font-size: 1em;   /* 16px  */ 
     font-weight: 400;
-    padding: 0.625em 1.25em 0.625em 1.875em ;
-    margin-left: 1em;
 }
 
 /*///////  tooltip  /////*/
@@ -418,9 +398,10 @@ footer {
     background:  white;     
     font-size: 0.8em;  
   /*  height: 50px;  */
-    width: auto;
+
    /* padding:5px; */ 
-    margin: auto;    
+   width: auto;
+         margin: auto;    
     text-align:center;
 
  }
@@ -443,7 +424,7 @@ footer {
     color: green;
 }  
 
-.page-footer-link a:hover img:hover {
+.page-footer-link a:hover, img:hover {
     color: #f50;  
 }
 
